@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('checkout') {
             steps{
-                git 'https://github.com/Arishaba-Peruth/june25-classdemo2.git'
+                git branch: 'main', url:'https://github.com/Arishaba-Peruth/june25-classdemo2.git'
             }
         }
         stage('setup Virtual Environment') {
