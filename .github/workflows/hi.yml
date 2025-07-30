@@ -1,0 +1,8 @@
+name: Peruth Arishaba
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Peruth Arishaba
+        run: echo "Peruth, Arishaba!"
