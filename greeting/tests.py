@@ -1,5 +1,5 @@
 from django.test import TestCase, Client
-from django.urls import reverse 
+from django.urls import reverse
 
 
 class GreetingTests(TestCase):
@@ -10,8 +10,8 @@ class GreetingTests(TestCase):
         response = self.client.get(reverse('index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Hello')
-        self.assertTemplateUsed(response, 'index.html')
-        
+        self.assertTemplateUsed(response, 'index.html')        
+
 class GreetingFunctionalityTests(TestCase):
     def test_greeting(self):
         response = self.client.get(reverse('index'))
